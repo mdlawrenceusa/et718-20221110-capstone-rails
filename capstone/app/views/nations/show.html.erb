@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @nation.name %>
+</p>
+
+<p>
+  <strong>Mobilephones:</strong>
+  <%= @nation.mobilephones %>
+</p>
+
+<p>
+  <strong>Mortalityunder5:</strong>
+  <%= @nation.mortalityunder5 %>
+</p>
+
+<p>
+  <strong>Healthexpenditurepercapita:</strong>
+  <%= @nation.healthexpenditurepercapita %>
+</p>
+
+<p>
+  <strong>Healthexpenditureppercentgdp:</strong>
+  <%= @nation.healthexpenditureppercentGDP %>
+</p>
+
+<p>
+  <strong>Population:</strong>
+  <%= @nation.population %>
+</p>
+
+<p>
+  <strong>Populationurban:</strong>
+  <%= @nation.populationurban %>
+</p>
+
+<p>
+  <strong>Birthrate:</strong>
+  <%= @nation.birthrate %>
+</p>
+
+<p>
+  <strong>Lifeexpectancy:</strong>
+  <%= @nation.lifeexpectancy %>
+</p>
+
+<p>
+  <strong>Gdp:</strong>
+  <%= @nation.GDP %>
+</p>
+
+<%= link_to 'Edit', edit_nation_path(@nation) %> |
+<%= link_to 'Back', nations_path %>

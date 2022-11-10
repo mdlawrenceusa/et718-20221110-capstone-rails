@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Nations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Mobilephones</th>
+      <th>Mortalityunder5</th>
+      <th>Healthexpenditurepercapita</th>
+      <th>Healthexpenditureppercentgdp</th>
+      <th>Population</th>
+      <th>Populationurban</th>
+      <th>Birthrate</th>
+      <th>Lifeexpectancy</th>
+      <th>Gdp</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @nations.each do |nation| %>
+      <tr>
+        <td><%= nation.name %></td>
+        <td><%= nation.mobilephones %></td>
+        <td><%= nation.mortalityunder5 %></td>
+        <td><%= nation.healthexpenditurepercapita %></td>
+        <td><%= nation.healthexpenditureppercentGDP %></td>
+        <td><%= nation.population %></td>
+        <td><%= nation.populationurban %></td>
+        <td><%= nation.birthrate %></td>
+        <td><%= nation.lifeexpectancy %></td>
+        <td><%= nation.GDP %></td>
+        <td><%= link_to 'Show', nation %></td>
+        <td><%= link_to 'Edit', edit_nation_path(nation) %></td>
+        <td><%= link_to 'Destroy', nation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Nation', new_nation_path %>
