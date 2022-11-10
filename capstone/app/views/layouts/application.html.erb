@@ -9,6 +9,27 @@
   </head>
 
   <body>
+        <div id="header" class="mainHeader">
+		<hr>
+		<div class="center"><H1>Example Social Research Organization</H1></div>
+	</div>
+	<br>
+	<hr>
+	<div class="topnav">
+	  <%= link_to 'Home', root_path %>
+	  <%= link_to 'About Us', root_path %>
+	  <%= link_to 'Contact Us', root_path %>
+		<%= link_to 'Query', controller: 'nations' %>
+	</div>
+	
+
     <%= yield %>
+    
+    
+    <br>
+<div id="Copyright" class="center">
+    <h5>&copy; 2020, Amazon Web Services, Inc. or its Affiliates. All rights
+        reserved.</h5>
+</div>
   </body>
 </html>

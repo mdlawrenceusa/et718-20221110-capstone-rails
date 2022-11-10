@@ -21,3 +21,5 @@ Nation.create!([{
    lifeexpectancy: 77,
    GDP: 9898800000000
 }])
+
+p "Created #{Nation.count} countries"
